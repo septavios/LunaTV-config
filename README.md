@@ -146,11 +146,11 @@ https://api.example.workers.dev/?config=1&encode=base58
   
 # API 健康报告（每日自动检测API状态）
 
-## API 状态（最近更新：2025-11-09 15:24 CST）
+## API 状态（最近更新：2025-11-09 16:29 CST）
 
 - 总 API 数量：80
-- 成功 API 数量：77
-- 失败 API 数量：3
+- 成功 API 数量：78
+- 失败 API 数量：2
 - 平均可用率：97.0%
 - 完美可用率（100%）：68 个
 - 高可用率（80%-99%）：10 个
@@ -233,7 +233,7 @@ https://api.example.workers.dev/?config=1&encode=base58
 | ✅ | 🎬速播资源 | https://subocaiji.com/api.php/provide/vod | 99 | 1 | 99.0% | 0 |
 | ✅ | 🔞奥斯卡 | https://aosikazy.com/api.php/provide/vod | 99 | 1 | 99.0% | 0 |
 | ✅ | 🎬iKun资源 | https://ikunzyapi.com/api.php/provide/vod | 98 | 2 | 98.0% | 0 |
-| ❌ | 🎬如意资源 | https://jjpz.hafrey.dpdns.org/?url=https://cj.rycjapi.com/api.php/provide/vod | 98 | 2 | 98.0% | 1 |
+| ✅ | 🎬如意资源 | https://jjpz.hafrey.dpdns.org/?url=https://cj.rycjapi.com/api.php/provide/vod | 98 | 2 | 98.0% | 0 |
 | ✅ | 🔞桃花资源 | https://thzy1.me/api.php/provide/vod | 98 | 2 | 98.0% | 0 |
 | ✅ | 🔞91麻豆 | https://91md.me/api.php/provide/vod | 97 | 3 | 97.0% | 0 |
 | ✅ | 🎬豆瓣资源 | https://caiji.dbzy5.com/api.php/provide/vod | 96 | 4 | 96.0% | 0 |
