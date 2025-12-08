@@ -2,6 +2,10 @@
 const fs = require("fs");
 const path = require("path");
 const axios = require("axios");
+const http = require("http");
+const https = require("https");
+const bs58 = require("bs58");
+process.stdout.on("error", (err) => { if (err && err.code === "EPIPE") process.exit(0); });
 
 // === 配置 ===
 const CONFIG_PATH = path.join(__dirname, "LunaTV-config.json");
@@ -10,23 +14,57 @@ const MAX_DAYS = 30;
 const WARN_STREAK = 3;
 const ENABLE_SEARCH_TEST = true;
 const SEARCH_KEYWORD = process.argv[2] || "斗罗大陆";
-const TIMEOUT_MS = 10000;
-const CONCURRENT_LIMIT = 10; // 并发限制
-const MAX_RETRY = 3;        // 请求最大重试次数
-const RETRY_DELAY_MS = 500; // 重试间隔(ms)
+const TIMEOUT_MS = 8000;
+const CONCURRENT_LIMIT = 12;
+const MAX_RETRY = 2;
+const RETRY_DELAY_MS = 500;
 
-// === 加载配置 ===
-if (!fs.existsSync(CONFIG_PATH)) {
-  console.error("❌ 配置文件不存在:", CONFIG_PATH);
-  process.exit(1);
+const axiosInstance = axios.create({
+  timeout: TIMEOUT_MS,
+  headers: { Accept: "application/json" },
+  httpAgent: new http.Agent({ keepAlive: true, maxSockets: 64 }),
+  httpsAgent: new https.Agent({ keepAlive: true, maxSockets: 64 }),
+  maxRedirects: 3,
+});
+
+const ts = () => new Date().toISOString().replace("T", " ").slice(11, 19);
+const log = (...args) => console.log(`[${ts()}]`, ...args);
+
+// === CLI 参数解析 ===
+const argv = process.argv.slice(2);
+const sourceUrlArg = argv.find(a => a.startsWith("--source-url="));
+const SOURCE_URL = sourceUrlArg ? sourceUrlArg.split("=")[1] : null;
+
+// === 加载配置（本地或远程） ===
+async function loadConfig() {
+  if (SOURCE_URL) {
+    log("加载远程配置", SOURCE_URL);
+    const resp = await axiosInstance.get(SOURCE_URL, { responseType: "text" });
+    const raw = String(resp.data).trim();
+    let text = raw;
+    try {
+      JSON.parse(raw);
+    } catch {
+      try {
+        const bytes = bs58.decode(raw.replace(/\s+/g, ""));
+        text = Buffer.from(bytes).toString("utf-8");
+      } catch (e) {
+        throw new Error("无法解析远程配置（既非 JSON 也非 Base58）");
+      }
+    }
+    const cfg = JSON.parse(text);
+    return cfg;
+  }
+
+  if (!fs.existsSync(CONFIG_PATH)) {
+    console.error("❌ 配置文件不存在:", CONFIG_PATH);
+    process.exit(1);
+  }
+  return JSON.parse(fs.readFileSync(CONFIG_PATH, "utf-8"));
 }
-const config = JSON.parse(fs.readFileSync(CONFIG_PATH, "utf-8"));
-const apiEntries = Object.values(config.api_site).map((s) => ({
-  name: s.name,
-  api: s.api,
-  detail: s.detail || "-",
-  disabled: !!s.disabled,
-}));
+
+let config;
+let apiEntries = [];
 
 // === 读取历史记录 ===
 let history = [];
@@ -53,12 +91,34 @@ const safeGet = async (url) => {
   for (let attempt = 1; attempt <= MAX_RETRY; attempt++) {
     const start = Date.now();
     try {
-      const res = await axios.get(url, { timeout: TIMEOUT_MS });
-      const latencyMs = Date.now() - start;
-      return { success: res.status === 200, latencyMs };
+      try {
+        log("HEAD", attempt, url);
+        const resHead = await axiosInstance.head(url, { timeout: Math.min(TIMEOUT_MS, 4000) });
+        const latencyMs = Date.now() - start;
+        return { success: resHead.status === 200, latencyMs };
+      } catch {
+        log("STREAM", attempt, url);
+        const controller = new AbortController();
+        const t0 = Date.now();
+        const res = await axiosInstance.get(url, { responseType: "stream", signal: controller.signal, timeout: TIMEOUT_MS });
+        let ttfb;
+        await new Promise((resolve) => {
+          const onData = () => {
+            ttfb = Date.now() - t0;
+            controller.abort();
+            try { res.data.destroy(); } catch {}
+            resolve();
+          };
+          res.data.once("data", onData);
+          res.data.once("error", resolve);
+          res.data.once("end", resolve);
+        });
+        const latencyMs = typeof ttfb === "number" ? ttfb : Date.now() - start;
+        return { success: res.status === 200, latencyMs };
+      }
     } catch {
       const latencyMs = Date.now() - start;
-      if (attempt < MAX_RETRY) await delay(RETRY_DELAY_MS);
+      if (attempt < MAX_RETRY) await delay(RETRY_DELAY_MS * attempt);
       else return { success: false, latencyMs };
     }
   }
@@ -108,13 +168,30 @@ const queueRun = (tasks, limit) => {
 
 // === 主逻辑 ===
 (async () => {
-  console.log("⏳ 正在检测 API 与搜索功能可用性（队列并发 + 重试机制）...");
+  const tStart = Date.now();
+  let completed = 0;
+
+  config = await loadConfig();
+  apiEntries = Object.values(config.api_site).map((s) => ({
+    name: s.name,
+    api: s.api,
+    detail: s.detail || "-",
+    disabled: !!s.disabled,
+  }));
+
+  log("配置源加载完成", `条目: ${apiEntries.length}`);
+  log("开始检测", `总源: ${apiEntries.length}`, `并发: ${CONCURRENT_LIMIT}`);
 
   const tasks = apiEntries.map(({ name, api, disabled }) => async () => {
     if (disabled) return { name, api, disabled, success: false, searchStatus: "无法搜索" };
 
+    log("开始", name);
     const { success, latencyMs } = await safeGet(api);
-    const searchStatus = ENABLE_SEARCH_TEST ? await testSearch(api, SEARCH_KEYWORD) : "-";
+    const searchStatus = ENABLE_SEARCH_TEST
+      ? (success ? (latencyMs < 2000 ? await testSearch(api, SEARCH_KEYWORD) : "慢速") : "-")
+      : "-";
+    completed++;
+    log("完成", `${completed}/${apiEntries.length}`, name, success ? "✅" : "❌", `${latencyMs}ms`, searchStatus);
     return { name, api, disabled, success, latencyMs, searchStatus };
   });
 
@@ -173,8 +250,8 @@ const queueRun = (tasks, limit) => {
     const rateNum = parseFloat(String(stats[api].successRate).replace(/%/, ""));
     const avgLatency = typeof stats[api].latencyAvgMs === "number" ? stats[api].latencyAvgMs : Infinity;
     if (!isNaN(rateNum)) {
-      if (rateNum >= 90 && avgLatency < 800) stats[api].reliable = "✅ 高";
-      else if (rateNum >= 70 && avgLatency < 1500) stats[api].reliable = "⚠️ 中";
+      if (rateNum >= 90 && avgLatency < 2500) stats[api].reliable = "✅ 高";
+      else if (rateNum >= 70 && avgLatency < 5000) stats[api].reliable = "⚠️ 中";
       else stats[api].reliable = "❌ 低";
     }
 
@@ -207,5 +284,98 @@ const queueRun = (tasks, limit) => {
 
 
   fs.writeFileSync(REPORT_PATH, md, "utf-8");
-  console.log("📄 报告已生成:", REPORT_PATH);
+  log("报告生成", REPORT_PATH);
+
+  const htmlRows = sorted.map(s => {
+    const detailCell = s.detail.startsWith("http") ? `<a href="${s.detail}" target="_blank" rel="noopener">Link</a>` : s.detail;
+    const apiCell = `<a href="${s.api}" target="_blank" rel="noopener">Link</a>`;
+    return `<tr>` +
+      `<td>${s.status}</td>` +
+      `<td>${s.name}</td>` +
+      `<td>${detailCell}</td>` +
+      `<td>${apiCell}</td>` +
+      `<td>${s.searchStatus}</td>` +
+      `<td style="text-align:right;">${s.ok}</td>` +
+      `<td style="text-align:right;">${s.fail}</td>` +
+      `<td style="text-align:right;">${s.successRate}</td>` +
+      `<td>${s.trend}</td>` +
+      `<td style="text-align:right;">${s.latencyAvgMs}</td>` +
+      `<td style="text-align:right;">${s.lastLatencyMs}</td>` +
+      `<td>${s.reliable}</td>` +
+    `</tr>`;
+  }).join("");
+
+  const html = `<!DOCTYPE html>` +
+  `<html lang="zh-CN">` +
+  `<head>` +
+  `<meta charset="UTF-8">` +
+  `<meta name="viewport" content="width=device-width, initial-scale=1.0">` +
+  `<title>源接口健康检测报告</title>` +
+  `<style>` +
+  `body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;max-width:1000px;margin:40px auto;padding:0 20px;line-height:1.6;color:#333}` +
+  `h1{margin:0 0 10px}` +
+  `table{width:100%;border-collapse:collapse;margin-top:16px}` +
+  `th,td{border:1px solid #ddd;padding:8px}` +
+  `th{background:#f5f5f5;text-align:left}` +
+  `code{background:#f4f4f4;padding:2px 6px;border-radius:3px}` +
+  `.meta{color:#555}` +
+  `</style>` +
+  `</head>` +
+  `<body>` +
+  `<h1>源接口健康检测报告</h1>` +
+  `<div class="meta">最近更新时间：${now}</div>` +
+  `<div class="meta">总源数：${apiEntries.length} ｜ 检测关键词：${SEARCH_KEYWORD}</div>` +
+  `<table>` +
+  `<thead>` +
+  `<tr>` +
+  `<th>状态</th>` +
+  `<th>资源名称</th>` +
+  `<th>地址</th>` +
+  `<th>API</th>` +
+  `<th>搜索功能</th>` +
+  `<th>成功次数</th>` +
+  `<th>失败次数</th>` +
+  `<th>成功率</th>` +
+  `<th>最近7天趋势</th>` +
+  `<th>平均响应(ms)</th>` +
+  `<th>最近响应(ms)</th>` +
+  `<th>可靠性</th>` +
+  `</tr>` +
+  `</thead>` +
+  `<tbody>` +
+  htmlRows +
+  `</tbody>` +
+  `</table>` +
+  `</body>` +
+  `</html>`;
+
+  const HTML_PATH = path.join(__dirname, "report.html");
+  fs.writeFileSync(HTML_PATH, html, "utf-8");
+  log("HTML 生成", HTML_PATH);
+  const tEnd = Date.now();
+  log("完成", `耗时: ${Math.round(tEnd - tStart)}ms`);
+
+  const reliable = {};
+  const entries = config.api_site || {};
+  for (const [key, val] of Object.entries(entries)) {
+    const s = stats[val.api];
+    if (!s) continue;
+    const rate = parseFloat(String(s.successRate).replace(/%/, ""));
+    if (!isNaN(rate) && rate >= 90 && s.status !== "🚨") {
+      reliable[key] = val;
+    }
+  }
+  const reliableOut = { api_site: reliable };
+  const RELIABLE_PATH = path.join(__dirname, "reliable-config.json");
+  fs.writeFileSync(RELIABLE_PATH, JSON.stringify(reliableOut, null, 2), "utf-8");
+  log("可靠配置生成", RELIABLE_PATH, `数量: ${Object.keys(reliable).length}`);
+
+  try {
+    const ha = axiosInstance.defaults.httpAgent;
+    const hsa = axiosInstance.defaults.httpsAgent;
+    if (ha && typeof ha.destroy === "function") ha.destroy();
+    if (hsa && typeof hsa.destroy === "function") hsa.destroy();
+  } catch {}
+
+  process.exit(0);
 })();
