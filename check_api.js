@@ -51,12 +51,15 @@ const delay = ms => new Promise(r => setTimeout(r, ms));
 
 const safeGet = async (url) => {
   for (let attempt = 1; attempt <= MAX_RETRY; attempt++) {
+    const start = Date.now();
     try {
       const res = await axios.get(url, { timeout: TIMEOUT_MS });
-      return res.status === 200;
+      const latencyMs = Date.now() - start;
+      return { success: res.status === 200, latencyMs };
     } catch {
+      const latencyMs = Date.now() - start;
       if (attempt < MAX_RETRY) await delay(RETRY_DELAY_MS);
-      else return false;
+      else return { success: false, latencyMs };
     }
   }
 };
@@ -110,9 +113,9 @@ const queueRun = (tasks, limit) => {
   const tasks = apiEntries.map(({ name, api, disabled }) => async () => {
     if (disabled) return { name, api, disabled, success: false, searchStatus: "无法搜索" };
 
-    const ok = await safeGet(api);
+    const { success, latencyMs } = await safeGet(api);
     const searchStatus = ENABLE_SEARCH_TEST ? await testSearch(api, SEARCH_KEYWORD) : "-";
-    return { name, api, disabled, success: ok, searchStatus };
+    return { name, api, disabled, success, latencyMs, searchStatus };
   });
 
   const todayResults = await queueRun(tasks, CONCURRENT_LIMIT);
@@ -129,13 +132,15 @@ const queueRun = (tasks, limit) => {
   // === 统计和生成报告 ===
   const stats = {};
   for (const { name, api, detail, disabled } of apiEntries) {
-    stats[api] = { name, api, detail, disabled, ok: 0, fail: 0, fail_streak: 0, trend: "", searchStatus: "-", status: "❌" };
+    stats[api] = { name, api, detail, disabled, ok: 0, fail: 0, fail_streak: 0, trend: "", searchStatus: "-", status: "❌", latencyAvgMs: "-", lastLatencyMs: "-", reliable: "-" };
 
+    const latencies = [];
     for (const day of history) {
       const rec = day.results.find((x) => x.api === api);
       if (!rec) continue;
       if (rec.success) stats[api].ok++;
       else stats[api].fail++;
+      if (typeof rec.latencyMs === "number") latencies.push(rec.latencyMs);
     }
 
     let streak = 0;
@@ -155,7 +160,23 @@ const queueRun = (tasks, limit) => {
     }).join("");
 
     const latest = todayResults.find(x => x.api === api);
-    if (latest) stats[api].searchStatus = latest.searchStatus;
+    if (latest) {
+      stats[api].searchStatus = latest.searchStatus;
+      if (typeof latest.latencyMs === "number") stats[api].lastLatencyMs = Math.round(latest.latencyMs);
+    }
+
+    if (latencies.length > 0) {
+      const avg = Math.round(latencies.reduce((a, b) => a + b, 0) / latencies.length);
+      stats[api].latencyAvgMs = avg;
+    }
+
+    const rateNum = parseFloat(String(stats[api].successRate).replace(/%/, ""));
+    const avgLatency = typeof stats[api].latencyAvgMs === "number" ? stats[api].latencyAvgMs : Infinity;
+    if (!isNaN(rateNum)) {
+      if (rateNum >= 90 && avgLatency < 800) stats[api].reliable = "✅ 高";
+      else if (rateNum >= 70 && avgLatency < 1500) stats[api].reliable = "⚠️ 中";
+      else stats[api].reliable = "❌ 低";
+    }
 
     if (disabled) stats[api].status = "🚫";
     else if (streak >= WARN_STREAK) stats[api].status = "🚨";
@@ -166,8 +187,8 @@ const queueRun = (tasks, limit) => {
   let md = `# 源接口健康检测报告\n\n`;
   md += `最近更新时间：${now}\n\n`;
   md += `**总源数:** ${apiEntries.length} | **检测关键词:** ${SEARCH_KEYWORD}\n\n`;
-  md += "| 状态 | 资源名称 | 地址 | API | 搜索功能 | 成功次数 | 失败次数 | 成功率 | 最近7天趋势 |\n";
-  md += "|------|---------|-----|-----|---------|---------:|--------:|-------:|--------------|\n";
+  md += "| 状态 | 资源名称 | 地址 | API | 搜索功能 | 成功次数 | 失败次数 | 成功率 | 最近7天趋势 | 平均响应(ms) | 最近响应(ms) | 可靠性 |\n";
+  md += "|------|---------|-----|-----|---------|---------:|--------:|-------:|--------------|--------------:|--------------:|--------|\n";
 
   const sorted = Object.values(stats).sort((a, b) => {
     const order = { "🚨": 1, "❌": 2, "✅": 3, "🚫": 4 };
@@ -177,7 +198,7 @@ const queueRun = (tasks, limit) => {
   for (const s of sorted) {
     const detailLink = s.detail.startsWith("http") ? `[Link](${s.detail})` : s.detail;
     const apiLink = `[Link](${s.api})`;
-    md += `| ${s.status} | ${s.name} | ${detailLink} | ${apiLink} | ${s.searchStatus} | ${s.ok} | ${s.fail} | ${s.successRate} | ${s.trend} |\n`;
+    md += `| ${s.status} | ${s.name} | ${detailLink} | ${apiLink} | ${s.searchStatus} | ${s.ok} | ${s.fail} | ${s.successRate} | ${s.trend} | ${s.latencyAvgMs} | ${s.lastLatencyMs} | ${s.reliable} |\n`;
   }
 
   md += `\n<details>\n<summary>📜 点击展开查看历史检测数据 (JSON)</summary>\n\n`;
