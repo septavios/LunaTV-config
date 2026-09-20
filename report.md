@@ -1,725 +1,95 @@
 # 源接口健康检测报告
 
-最近更新时间：2026-09-20 03:07 CST
+最近更新时间：2026-09-21 03:13 CST
 
 **总源数:** 78 | **检测关键词:** 你好
 
 | 状态 | 资源名称 | 地址 | API | 搜索功能 | 成功次数 | 失败次数 | 成功率 | 最近7天趋势 | 平均响应(ms) | 最近响应(ms) | 可靠性 |
 |------|---------|-----|-----|---------|---------:|--------:|-------:|--------------|--------------:|--------------:|--------|
-| 🚨 | 🎬如意资源 | [Link](https://www.ryzyw.com) | [Link](https://pz.168188.dpdns.org/?url=https://cj.rycjapi.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 225 | 206 | ❌ 低 |
-| 🚨 | 🎬豪华资源 | [Link](https://www.haohuazy.com) | [Link](https://pz.168188.dpdns.org/?url=https://hhzyapi.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 247 | 528 | ❌ 低 |
-| 🚨 | 🎬百度云zy | [Link](https://bdzy1.com) | [Link](https://pz.168188.dpdns.org/?url=https://api.apibdzy.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 337 | 254 | ❌ 低 |
-| 🚨 | 🎬山海资源 | [Link](https://zy.sh0o.cn) | [Link](https://zy.sh0o.cn/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 6284 | 10006 | ❌ 低 |
-| 🚨 | 🎬金蝉影视 | [Link](https://zy.jinchancaiji.com) | [Link](https://zy.jinchancaiji.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 339 | 382 | ❌ 低 |
-| 🚨 | 🔞91-精品- | [Link](https://91jpzyw.com) | [Link](https://91jpzyw.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 1300 | 227 | ❌ 低 |
-| 🚨 | 🔞--AIvin- | [Link](http://lbapiby.com) | [Link](http://lbapiby.com/api.php/provide/vod) | ❌ | 6 | 24 | 20.0% | ❌❌❌❌❌❌❌ | 355 | 198 | ❌ 低 |
-| 🚨 | 🔞百万资源 | [Link](https://api.bwzym3u8.com) | [Link](https://api.bwzyz.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 1481 | 1968 | ❌ 低 |
-| 🚨 | 🔞优优资源 | [Link](https://www.yyzywcj.com) | [Link](https://www.yyzywcj.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 1839 | 669 | ❌ 低 |
-| 🚨 | 🔞-色南国- | [Link](https://api.sexnguon.com) | [Link](https://api.sexnguon.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 323 | 1453 | ❌ 低 |
-| 🚨 | 🔞杏吧资源 | [Link](https://xingba111.com) | [Link](https://pz.168188.dpdns.org/?url=https://xingba222.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 127 | 19 | ❌ 低 |
-| 🚨 | 🔞丝袜资源 | [Link](https://siwazyw.tv) | [Link](https://siwazyw.tv/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 112 | 55 | ❌ 低 |
-| ❌ | 🎬飘零资源 | [Link](https://p2100.net) | [Link](https://p2100.net/api.php/provide/vod) | ❌ | 2 | 28 | 6.7% | ❌❌❌❌✅✅❌ | 367 | 478 | ❌ 低 |
-| ✅ | 🎬-爱奇艺- | [Link](https://iqiyizyapi.com) | [Link](https://iqiyizyapi.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 1760 | 1667 | ❌ 低 |
-| ✅ | 🎬豆瓣资源 | [Link](https://dbzy.tv) | [Link](https://caiji.dbzy5.com/api.php/provide/vod) | 无结果 | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 1051 | 1276 | ⚠️ 中 |
-| ✅ | 🎬天涯影视 | [Link](https://tyyszy.com) | [Link](https://tyyszy.com/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 760 | 1380 | ✅ 高 |
-| ✅ | 🎬茅台资源 | [Link](https://mtzy.me) | [Link](https://caiji.maotaizy.cc/api.php/provide/vod) | 无结果 | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1672 | 1970 | ❌ 低 |
-| ✅ | 🎬卧龙资源 | [Link](https://wolongzyw.com) | [Link](https://wolongzyw.com/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1467 | 1576 | ⚠️ 中 |
-| ✅ | 🎬iKun资源 | [Link](https://ikunzy.com) | [Link](https://ikunzyapi.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 1664 | 1377 | ❌ 低 |
-| ✅ | 🎬电影天堂 | [Link](http://caiji.dyttzyapi.com) | [Link](http://caiji.dyttzyapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1344 | 1578 | ⚠️ 中 |
-| ✅ | 🎬猫眼资源 | [Link](https://www.maoyanzy.com) | [Link](https://api.maoyanapi.top/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1819 | 2110 | ❌ 低 |
-| ✅ | 🎬量子资源 | [Link](https://cj.lzcaiji.com) | [Link](https://cj.lzcaiji.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1403 | 1700 | ⚠️ 中 |
-| ✅ | 🎬360 资源 | [Link](https://360zy.com) | [Link](https://360zy.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 2422 | 2668 | ❌ 低 |
-| ✅ | 🎬极速资源 | [Link](https://jszyapi.com) | [Link](https://jszyapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 557 | 184 | ✅ 高 |
-| ✅ | 🎬魔都资源 | [Link](https://www.moduzy.net) | [Link](https://www.mdzyapi.com/api.php/provide/vod) | ✅ | 28 | 2 | 93.3% | ✅✅✅✅✅✅✅ | 652 | 421 | ✅ 高 |
-| ✅ | 🎬非凡资源 | [Link](https://cj.ffzyapi.com) | [Link](https://api.ffzyapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1139 | 1567 | ⚠️ 中 |
-| ✅ | 🎬暴风资源 | [Link](https://bfzy.tv) | [Link](https://bfzyapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 613 | 419 | ✅ 高 |
-| ✅ | 🎬最大资源 | [Link](https://zuida.xyz) | [Link](https://api.zuidapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 509 | 547 | ✅ 高 |
-| ✅ | 🎬无尽资源 | [Link](https://wujinzy.com) | [Link](https://api.wujinapi.me/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 652 | 673 | ✅ 高 |
-| ✅ | 🎬新浪资源 | [Link](https://xinlangapi.com) | [Link](https://api.xinlangapi.com/xinlangapi.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 539 | 724 | ✅ 高 |
-| ✅ | 🎬旺旺资源 | [Link](https://api.wwzy.tv) | [Link](https://api.wwzy.tv/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 717 | 902 | ✅ 高 |
-| ✅ | 🎬速播资源 | [Link](https://www.subozy.com) | [Link](https://subocaiji.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 672 | 887 | ✅ 高 |
-| ✅ | 🎬金鹰点播 | [Link](https://jinyingzy.com) | [Link](https://jinyingzy.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 799 | 886 | ✅ 高 |
-| ✅ | 🎬U酷影视 | [Link](https://www.ukuzy.com) | [Link](https://api.ukuapi88.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 464 | 745 | ✅ 高 |
-| ✅ | 🎬光速资源 | [Link](https://api.guangsuapi.com) | [Link](https://api.guangsuapi.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 533 | 658 | ✅ 高 |
-| ✅ | 🎬红牛资源 | [Link](https://www.hongniuzy.com) | [Link](https://www.hongniuzy2.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 638 | 696 | ✅ 高 |
-| ✅ | 🎬魔都动漫 | [Link](https://caiji.moduapi.cc) | [Link](https://caiji.moduapi.cc/api.php/provide/vod) | ✅ | 28 | 2 | 93.3% | ✅✅✅✅✅✅✅ | 552 | 452 | ✅ 高 |
-| ✅ | 🎬量子影视 | [Link](https://lzizy.net) | [Link](https://cj.lziapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 348 | 332 | ✅ 高 |
-| ✅ | 🎬最大点播 | [Link](https://zuidazy.co) | [Link](https://zuidazy.me/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 435 | 497 | ✅ 高 |
-| ✅ | 🎬无尽影视 | [Link](https://wujinzy.com) | [Link](https://api.wujinapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 299 | 412 | ✅ 高 |
-| ✅ | 🎬旺旺短剧 | [Link](https://wwzy.tv) | [Link](https://wwzy.tv/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 699 | 740 | ✅ 高 |
-| ✅ | 🎬优质资源 | [Link](https://1080zyk4.com) | [Link](https://api.yzzy-api.com/inc/apijson.php) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 864 | 1364 | ⚠️ 中 |
-| ✅ | 🎬虎牙资源 | [Link](https://www.huyaapi.com) | [Link](https://www.huyaapi.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 815 | 902 | ⚠️ 中 |
-| ✅ | 🎬鸭鸭资源 | [Link](https://yayazy3.com) | [Link](https://cj.yayazy.net/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 527 | 742 | ✅ 高 |
-| ✅ | 🎬索尼资源 | [Link](https://suonizy.net) | [Link](https://suoniapi.com/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 226 | 348 | ✅ 高 |
-| ✅ | 🎬快车资源 | [Link](https://kuaichezy.com) | [Link](https://caiji.kuaichezy.org/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 427 | 366 | ✅ 高 |
-| ✅ | 🎬闪电资源 | [Link](https://shandianzy.com) | [Link](https://xsd.sdzyapi.com/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 464 | 627 | ✅ 高 |
-| ✅ | 🎬樱花资源 | [Link](https://yhzy.cc) | [Link](https://m3u8.apiyhzy.com/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 663 | 581 | ✅ 高 |
-| ✅ | 🔞麻豆视频 | [Link](https://91md.me) | [Link](https://91md.me/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 720 | 559 | ✅ 高 |
-| ✅ | 🔞souavZY | [Link](https://api.souavzy.vip) | [Link](https://api.souavzy.vip/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 903 | 1178 | ⚠️ 中 |
-| ✅ | 🔞155-资源 | [Link](https://155zy2.com) | [Link](https://155api.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 536 | 359 | ✅ 高 |
-| ✅ | 🔞玉兔资源 | [Link](https://apiyutu.com) | [Link](https://apiyutu.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 437 | 536 | ✅ 高 |
-| ✅ | 🔞番号资源 | [Link](http://fhapi9.com) | [Link](http://fhapi9.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 743 | 867 | ✅ 高 |
-| ✅ | 🔞精品资源 | [Link](https://www.jingpinx.com) | [Link](https://www.jingpinx.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1079 | 1150 | ⚠️ 中 |
-| ✅ | 🔞-老色逼- | [Link](https://apilsbzy1.com) | [Link](https://apilsbzy1.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 553 | 436 | ✅ 高 |
-| ✅ | 🔞桃花资源 | [Link](https://thzy8.me) | [Link](https://thzy1.me/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1118 | 2299 | ⚠️ 中 |
-| ✅ | 🔞小鸡资源 | [Link](https://xiaojizy.live) | [Link](https://api.xiaojizy.live/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 794 | 1847 | ✅ 高 |
-| ✅ | 🔞黄色仓库 | [Link](https://hsckzy.xyz) | [Link](https://hsckzy.xyz/api.php/provide/vod) | ✅ | 28 | 2 | 93.3% | ✅✅✅✅✅✅✅ | 684 | 1585 | ✅ 高 |
-| ✅ | 🔞-大奶子- | [Link](https://apidanaizi.com) | [Link](https://apidanaizi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 954 | 1393 | ⚠️ 中 |
-| ✅ | 🔞jkun资源 | [Link](https://jkunzyapi.com) | [Link](https://jkunzyapi.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 939 | 907 | ⚠️ 中 |
-| ✅ | 🔞乐播资源 | [Link](https://lbapi9.com) | [Link](https://lbapi9.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1021 | 1586 | ⚠️ 中 |
-| ✅ | 🔞奶香资源 | [Link](https://Naixxzy.com) | [Link](https://Naixxzy.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 824 | 1945 | ⚠️ 中 |
-| ✅ | 🔞森林资源 | [Link](https://slapibf.com) | [Link](https://beiyong.slapibf.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 763 | 2023 | ✅ 高 |
-| ✅ | 🔞辣椒资源 | [Link](https://apilj.com) | [Link](https://apilj.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 760 | 1769 | ✅ 高 |
-| ✅ | 🔞鲨鱼资源 | [Link](https://shayuapi.com) | [Link](https://shayuapi.com/api.php/provide/vod) | ✅ | 24 | 6 | 80.0% | ✅✅✅❌✅✅✅ | 5274 | 5562 | ❌ 低 |
-| ✅ | 🔞-幸资源- | [Link](https://xzytv.com) | [Link](https://xzybb2.com/api.php/provide/vod) | ❌ | 23 | 7 | 76.7% | ✅✅✅✅✅✅✅ | 2690 | 1464 | ❌ 低 |
-| ✅ | 🔞豆豆资源 | [Link](https://doudouzy.com) | [Link](https://api.douapi.cc/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 854 | 1358 | ⚠️ 中 |
-| ✅ | 🔞滴滴资源 | [Link](https://didizy.com) | [Link](https://api.ddapi.cc/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 800 | 844 | ⚠️ 中 |
-| ✅ | 🔞黑料资源 | [Link](https://heiliaozy.cc) | [Link](https://www.heiliaozyapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1891 | 1954 | ❌ 低 |
-| ✅ | 🔞 CK-资源 | [Link](https://ckzy.me) | [Link](https://ckzy.me/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 614 | 925 | ✅ 高 |
-| ✅ | 🔞细胞资源 | [Link](https://www.xxibaozyw.com) | [Link](https://www.xxibaozyw.com/api.php/provide/vod) | 无结果 | 21 | 9 | 70.0% | ❌✅✅✅✅✅✅ | 472 | 786 | ⚠️ 中 |
-| ✅ | 🔞香蕉资源 | [Link](https://www.xiangjiaozyw.com) | [Link](https://www.xiangjiaozyw.com/api.php/provide/vod) | ✅ | 21 | 9 | 70.0% | ❌✅✅✅✅✅✅ | 543 | 971 | ⚠️ 中 |
-| ✅ | 🔞-美少女- | [Link](https://www.msnii.com) | [Link](https://www.msnii.com/api/json.php) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 836 | 757 | ⚠️ 中 |
-| ✅ | 🔞-黄AVZY | [Link](https://www.pgxdy.com) | [Link](https://www.pgxdy.com/api/json.php) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 701 | 695 | ✅ 高 |
-| ✅ | 🔞白嫖资源 | [Link](https://www.kxgav.com) | [Link](https://www.kxgav.com/api/json.php) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 782 | 2210 | ✅ 高 |
-| ✅ | 🔞大地资源 | [Link](https://dadizy11.com) | [Link](https://dadiapi.com/feifei) | 不匹配 | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 863 | 2436 | ⚠️ 中 |
-| ✅ | 🔞色猫资源 | [Link](https://semaozy1.com) | [Link](https://caiji.semaozy.net/inc/apijson_vod.php/provide/vod) | 无结果 | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 594 | 1605 | ✅ 高 |
-| ✅ | 🔞-奥斯卡- | [Link](https://aosikazy.com) | [Link](https://aosikazy.com/api.php/provide/vod) | ❌ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 873 | 423 | ⚠️ 中 |
+| 🚨 | 🎬如意资源 | [Link](https://www.ryzyw.com) | [Link](https://pz.168188.dpdns.org/?url=https://cj.rycjapi.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 233 | 331 | ❌ 低 |
+| 🚨 | 🎬豪华资源 | [Link](https://www.haohuazy.com) | [Link](https://pz.168188.dpdns.org/?url=https://hhzyapi.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 241 | 6 | ❌ 低 |
+| 🚨 | 🎬百度云zy | [Link](https://bdzy1.com) | [Link](https://pz.168188.dpdns.org/?url=https://api.apibdzy.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 346 | 323 | ❌ 低 |
+| 🚨 | 🎬山海资源 | [Link](https://zy.sh0o.cn) | [Link](https://zy.sh0o.cn/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 6201 | 7502 | ❌ 低 |
+| 🚨 | 🎬金蝉影视 | [Link](https://zy.jinchancaiji.com) | [Link](https://zy.jinchancaiji.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 346 | 294 | ❌ 低 |
+| 🚨 | 🔞91-精品- | [Link](https://91jpzyw.com) | [Link](https://91jpzyw.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 967 | 5 | ❌ 低 |
+| 🚨 | 🔞--AIvin- | [Link](http://lbapiby.com) | [Link](http://lbapiby.com/api.php/provide/vod) | ❌ | 5 | 25 | 16.7% | ❌❌❌❌❌❌❌ | 329 | 157 | ❌ 低 |
+| 🚨 | 🔞百万资源 | [Link](https://api.bwzym3u8.com) | [Link](https://api.bwzyz.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 1447 | 555 | ❌ 低 |
+| 🚨 | 🔞优优资源 | [Link](https://www.yyzywcj.com) | [Link](https://www.yyzywcj.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 1847 | 317 | ❌ 低 |
+| 🚨 | 🔞-色南国- | [Link](https://api.sexnguon.com) | [Link](https://api.sexnguon.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 345 | 817 | ❌ 低 |
+| 🚨 | 🔞杏吧资源 | [Link](https://xingba111.com) | [Link](https://pz.168188.dpdns.org/?url=https://xingba222.com/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 127 | 6 | ❌ 低 |
+| 🚨 | 🔞丝袜资源 | [Link](https://siwazyw.tv) | [Link](https://siwazyw.tv/api.php/provide/vod) | ❌ | 0 | 30 | 0.0% | ❌❌❌❌❌❌❌ | 102 | 51 | ❌ 低 |
+| ❌ | 🎬飘零资源 | [Link](https://p2100.net) | [Link](https://p2100.net/api.php/provide/vod) | ❌ | 2 | 28 | 6.7% | ❌❌❌✅✅❌❌ | 365 | 25 | ❌ 低 |
+| ✅ | 🎬-爱奇艺- | [Link](https://iqiyizyapi.com) | [Link](https://iqiyizyapi.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 1725 | 594 | ❌ 低 |
+| ✅ | 🎬豆瓣资源 | [Link](https://dbzy.tv) | [Link](https://caiji.dbzy5.com/api.php/provide/vod) | 无结果 | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 1050 | 1050 | ⚠️ 中 |
+| ✅ | 🎬天涯影视 | [Link](https://tyyszy.com) | [Link](https://tyyszy.com/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 737 | 539 | ✅ 高 |
+| ✅ | 🎬茅台资源 | [Link](https://mtzy.me) | [Link](https://caiji.maotaizy.cc/api.php/provide/vod) | 无结果 | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1648 | 1493 | ❌ 低 |
+| ✅ | 🎬卧龙资源 | [Link](https://wolongzyw.com) | [Link](https://wolongzyw.com/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1457 | 1437 | ⚠️ 中 |
+| ✅ | 🎬iKun资源 | [Link](https://ikunzy.com) | [Link](https://ikunzyapi.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 1636 | 862 | ❌ 低 |
+| ✅ | 🎬电影天堂 | [Link](http://caiji.dyttzyapi.com) | [Link](http://caiji.dyttzyapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1321 | 927 | ⚠️ 中 |
+| ✅ | 🎬猫眼资源 | [Link](https://www.maoyanzy.com) | [Link](https://api.maoyanapi.top/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1785 | 1399 | ❌ 低 |
+| ✅ | 🎬量子资源 | [Link](https://cj.lzcaiji.com) | [Link](https://cj.lzcaiji.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1370 | 1006 | ⚠️ 中 |
+| ✅ | 🎬360 资源 | [Link](https://360zy.com) | [Link](https://360zy.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 2352 | 1362 | ❌ 低 |
+| ✅ | 🎬极速资源 | [Link](https://jszyapi.com) | [Link](https://jszyapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 548 | 374 | ✅ 高 |
+| ✅ | 🎬魔都资源 | [Link](https://www.moduzy.net) | [Link](https://www.mdzyapi.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 655 | 208 | ✅ 高 |
+| ✅ | 🎬非凡资源 | [Link](https://cj.ffzyapi.com) | [Link](https://api.ffzyapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1119 | 740 | ⚠️ 中 |
+| ✅ | 🎬暴风资源 | [Link](https://bfzy.tv) | [Link](https://bfzyapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 577 | 207 | ✅ 高 |
+| ✅ | 🎬最大资源 | [Link](https://zuida.xyz) | [Link](https://api.zuidapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 475 | 201 | ✅ 高 |
+| ✅ | 🎬无尽资源 | [Link](https://wujinzy.com) | [Link](https://api.wujinapi.me/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 619 | 48 | ✅ 高 |
+| ✅ | 🎬新浪资源 | [Link](https://xinlangapi.com) | [Link](https://api.xinlangapi.com/xinlangapi.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 511 | 250 | ✅ 高 |
+| ✅ | 🎬旺旺资源 | [Link](https://api.wwzy.tv) | [Link](https://api.wwzy.tv/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 702 | 474 | ✅ 高 |
+| ✅ | 🎬速播资源 | [Link](https://www.subozy.com) | [Link](https://subocaiji.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 529 | 334 | ✅ 高 |
+| ✅ | 🎬金鹰点播 | [Link](https://jinyingzy.com) | [Link](https://jinyingzy.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 783 | 171 | ✅ 高 |
+| ✅ | 🎬U酷影视 | [Link](https://www.ukuzy.com) | [Link](https://api.ukuapi88.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 451 | 97 | ✅ 高 |
+| ✅ | 🎬光速资源 | [Link](https://api.guangsuapi.com) | [Link](https://api.guangsuapi.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 526 | 55 | ✅ 高 |
+| ✅ | 🎬红牛资源 | [Link](https://www.hongniuzy.com) | [Link](https://www.hongniuzy2.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 630 | 158 | ✅ 高 |
+| ✅ | 🎬魔都动漫 | [Link](https://caiji.moduapi.cc) | [Link](https://caiji.moduapi.cc/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 554 | 377 | ✅ 高 |
+| ✅ | 🎬量子影视 | [Link](https://lzizy.net) | [Link](https://cj.lziapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 339 | 67 | ✅ 高 |
+| ✅ | 🎬最大点播 | [Link](https://zuidazy.co) | [Link](https://zuidazy.me/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 425 | 125 | ✅ 高 |
+| ✅ | 🎬无尽影视 | [Link](https://wujinzy.com) | [Link](https://api.wujinapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 283 | 99 | ✅ 高 |
+| ✅ | 🎬旺旺短剧 | [Link](https://wwzy.tv) | [Link](https://wwzy.tv/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 694 | 437 | ✅ 高 |
+| ✅ | 🎬优质资源 | [Link](https://1080zyk4.com) | [Link](https://api.yzzy-api.com/inc/apijson.php) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 859 | 560 | ⚠️ 中 |
+| ✅ | 🎬虎牙资源 | [Link](https://www.huyaapi.com) | [Link](https://www.huyaapi.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 812 | 140 | ⚠️ 中 |
+| ✅ | 🎬鸭鸭资源 | [Link](https://yayazy3.com) | [Link](https://cj.yayazy.net/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 517 | 179 | ✅ 高 |
+| ✅ | 🎬索尼资源 | [Link](https://suonizy.net) | [Link](https://suoniapi.com/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 219 | 47 | ✅ 高 |
+| ✅ | 🎬快车资源 | [Link](https://kuaichezy.com) | [Link](https://caiji.kuaichezy.org/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 427 | 354 | ✅ 高 |
+| ✅ | 🎬闪电资源 | [Link](https://shandianzy.com) | [Link](https://xsd.sdzyapi.com/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 464 | 329 | ✅ 高 |
+| ✅ | 🎬樱花资源 | [Link](https://yhzy.cc) | [Link](https://m3u8.apiyhzy.com/api.php/provide/vod) | ❌ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 663 | 507 | ✅ 高 |
+| ✅ | 🔞麻豆视频 | [Link](https://91md.me) | [Link](https://91md.me/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 705 | 347 | ✅ 高 |
+| ✅ | 🔞souavZY | [Link](https://api.souavzy.vip) | [Link](https://api.souavzy.vip/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 896 | 173 | ⚠️ 中 |
+| ✅ | 🔞155-资源 | [Link](https://155zy2.com) | [Link](https://155api.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 531 | 43 | ✅ 高 |
+| ✅ | 🔞玉兔资源 | [Link](https://apiyutu.com) | [Link](https://apiyutu.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 431 | 113 | ✅ 高 |
+| ✅ | 🔞番号资源 | [Link](http://fhapi9.com) | [Link](http://fhapi9.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 734 | 461 | ✅ 高 |
+| ✅ | 🔞精品资源 | [Link](https://www.jingpinx.com) | [Link](https://www.jingpinx.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1103 | 1584 | ⚠️ 中 |
+| ✅ | 🔞-老色逼- | [Link](https://apilsbzy1.com) | [Link](https://apilsbzy1.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 569 | 922 | ✅ 高 |
+| ✅ | 🔞桃花资源 | [Link](https://thzy8.me) | [Link](https://thzy1.me/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1144 | 1620 | ⚠️ 中 |
+| ✅ | 🔞小鸡资源 | [Link](https://xiaojizy.live) | [Link](https://api.xiaojizy.live/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 790 | 325 | ✅ 高 |
+| ✅ | 🔞黄色仓库 | [Link](https://hsckzy.xyz) | [Link](https://hsckzy.xyz/api.php/provide/vod) | ✅ | 28 | 2 | 93.3% | ✅✅✅✅✅✅✅ | 688 | 330 | ✅ 高 |
+| ✅ | 🔞-大奶子- | [Link](https://apidanaizi.com) | [Link](https://apidanaizi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 951 | 349 | ⚠️ 中 |
+| ✅ | 🔞jkun资源 | [Link](https://jkunzyapi.com) | [Link](https://jkunzyapi.com/api.php/provide/vod) | ✅ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 935 | 42 | ⚠️ 中 |
+| ✅ | 🔞乐播资源 | [Link](https://lbapi9.com) | [Link](https://lbapi9.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1029 | 591 | ⚠️ 中 |
+| ✅ | 🔞奶香资源 | [Link](https://Naixxzy.com) | [Link](https://Naixxzy.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 832 | 844 | ⚠️ 中 |
+| ✅ | 🔞森林资源 | [Link](https://slapibf.com) | [Link](https://beiyong.slapibf.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 760 | 413 | ✅ 高 |
+| ✅ | 🔞辣椒资源 | [Link](https://apilj.com) | [Link](https://apilj.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 739 | 677 | ✅ 高 |
+| ✅ | 🔞鲨鱼资源 | [Link](https://shayuapi.com) | [Link](https://shayuapi.com/api.php/provide/vod) | ✅ | 24 | 6 | 80.0% | ✅✅❌✅✅✅✅ | 5312 | 2538 | ❌ 低 |
+| ✅ | 🔞-幸资源- | [Link](https://xzytv.com) | [Link](https://xzybb2.com/api.php/provide/vod) | ❌ | 24 | 6 | 80.0% | ✅✅✅✅✅✅✅ | 2377 | 617 | ❌ 低 |
+| ✅ | 🔞豆豆资源 | [Link](https://doudouzy.com) | [Link](https://api.douapi.cc/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 866 | 682 | ⚠️ 中 |
+| ✅ | 🔞滴滴资源 | [Link](https://didizy.com) | [Link](https://api.ddapi.cc/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 809 | 586 | ⚠️ 中 |
+| ✅ | 🔞黑料资源 | [Link](https://heiliaozy.cc) | [Link](https://www.heiliaozyapi.com/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 1923 | 2024 | ❌ 低 |
+| ✅ | 🔞 CK-资源 | [Link](https://ckzy.me) | [Link](https://ckzy.me/api.php/provide/vod) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 615 | 190 | ✅ 高 |
+| ✅ | 🔞细胞资源 | [Link](https://www.xxibaozyw.com) | [Link](https://www.xxibaozyw.com/api.php/provide/vod) | 无结果 | 21 | 9 | 70.0% | ✅✅✅✅✅✅✅ | 462 | 150 | ⚠️ 中 |
+| ✅ | 🔞香蕉资源 | [Link](https://www.xiangjiaozyw.com) | [Link](https://www.xiangjiaozyw.com/api.php/provide/vod) | ✅ | 21 | 9 | 70.0% | ✅✅✅✅✅✅✅ | 540 | 760 | ⚠️ 中 |
+| ✅ | 🔞-美少女- | [Link](https://www.msnii.com) | [Link](https://www.msnii.com/api/json.php) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 834 | 720 | ⚠️ 中 |
+| ✅ | 🔞-黄AVZY | [Link](https://www.pgxdy.com) | [Link](https://www.pgxdy.com/api/json.php) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 725 | 1089 | ✅ 高 |
+| ✅ | 🔞白嫖资源 | [Link](https://www.kxgav.com) | [Link](https://www.kxgav.com/api/json.php) | ✅ | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 775 | 221 | ✅ 高 |
+| ✅ | 🔞大地资源 | [Link](https://dadizy11.com) | [Link](https://dadiapi.com/feifei) | 不匹配 | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 881 | 1132 | ⚠️ 中 |
+| ✅ | 🔞色猫资源 | [Link](https://semaozy1.com) | [Link](https://caiji.semaozy.net/inc/apijson_vod.php/provide/vod) | 无结果 | 30 | 0 | 100.0% | ✅✅✅✅✅✅✅ | 610 | 784 | ✅ 高 |
+| ✅ | 🔞-奥斯卡- | [Link](https://aosikazy.com) | [Link](https://aosikazy.com/api.php/provide/vod) | ❌ | 29 | 1 | 96.7% | ✅✅✅✅✅✅✅ | 879 | 554 | ⚠️ 中 |
 
 <details>
 <summary>📜 点击展开查看历史检测数据 (JSON)</summary>
 
 ```json
 [
-  {
-    "date": "2026-08-21",
-    "keyword": "你好",
-    "results": [
-      {
-        "name": "🎬-爱奇艺-",
-        "api": "https://iqiyizyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 1663,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬豆瓣资源",
-        "api": "https://caiji.dbzy5.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 1068,
-        "searchStatus": "无结果"
-      },
-      {
-        "name": "🎬天涯影视",
-        "api": "https://tyyszy.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 1233,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🎬茅台资源",
-        "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 2191,
-        "searchStatus": "无结果"
-      },
-      {
-        "name": "🎬卧龙资源",
-        "api": "https://wolongzyw.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 1743,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🎬iKun资源",
-        "api": "https://ikunzyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 1704,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬电影天堂",
-        "api": "http://caiji.dyttzyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 1640,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬猫眼资源",
-        "api": "https://api.maoyanapi.top/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 2415,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬量子资源",
-        "api": "https://cj.lzcaiji.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 1991,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬360 资源",
-        "api": "https://360zy.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 3453,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬极速资源",
-        "api": "https://jszyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 659,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬魔都资源",
-        "api": "https://www.mdzyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": false,
-        "latencyMs": 138,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🎬非凡资源",
-        "api": "https://api.ffzyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 1344,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬暴风资源",
-        "api": "https://bfzyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 1279,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬最大资源",
-        "api": "https://api.zuidapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 1199,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬无尽资源",
-        "api": "https://api.wujinapi.me/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 1043,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬新浪资源",
-        "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 1102,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬旺旺资源",
-        "api": "https://api.wwzy.tv/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 918,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🎬速播资源",
-        "api": "https://subocaiji.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 4620,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬金鹰点播",
-        "api": "https://jinyingzy.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 655,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬飘零资源",
-        "api": "https://p2100.net/api.php/provide/vod",
-        "disabled": false,
-        "success": false,
-        "latencyMs": 75,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🎬U酷影视",
-        "api": "https://api.ukuapi88.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 479,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬光速资源",
-        "api": "https://api.guangsuapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 265,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬红牛资源",
-        "api": "https://www.hongniuzy2.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 390,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬魔都动漫",
-        "api": "https://caiji.moduapi.cc/api.php/provide/vod",
-        "disabled": false,
-        "success": false,
-        "latencyMs": 303,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🎬如意资源",
-        "api": "https://pz.168188.dpdns.org/?url=https://cj.rycjapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": false,
-        "latencyMs": 86,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🎬豪华资源",
-        "api": "https://pz.168188.dpdns.org/?url=https://hhzyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": false,
-        "latencyMs": 201,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🎬百度云zy",
-        "api": "https://pz.168188.dpdns.org/?url=https://api.apibdzy.com/api.php/provide/vod",
-        "disabled": false,
-        "success": false,
-        "latencyMs": 36,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🎬山海资源",
-        "api": "https://zy.sh0o.cn/api.php/provide/vod",
-        "disabled": false,
-        "success": false,
-        "latencyMs": 10001,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🎬金蝉影视",
-        "api": "https://zy.jinchancaiji.com/api.php/provide/vod",
-        "disabled": false,
-        "success": false,
-        "latencyMs": 85,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🎬量子影视",
-        "api": "https://cj.lziapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 341,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬最大点播",
-        "api": "https://zuidazy.me/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 449,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬无尽影视",
-        "api": "https://api.wujinapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 578,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬旺旺短剧",
-        "api": "https://wwzy.tv/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 595,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🎬优质资源",
-        "api": "https://api.yzzy-api.com/inc/apijson.php",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 704,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬虎牙资源",
-        "api": "https://www.huyaapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 237,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🎬鸭鸭资源",
-        "api": "https://cj.yayazy.net/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 485,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🎬索尼资源",
-        "api": "https://suoniapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 273,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🎬快车资源",
-        "api": "https://caiji.kuaichezy.org/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 368,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🎬闪电资源",
-        "api": "https://xsd.sdzyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 311,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🎬樱花资源",
-        "api": "https://m3u8.apiyhzy.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 533,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🔞麻豆视频",
-        "api": "https://91md.me/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 825,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞91-精品-",
-        "api": "https://91jpzyw.com/api.php/provide/vod",
-        "disabled": false,
-        "success": false,
-        "latencyMs": 10001,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🔞--AIvin-",
-        "api": "http://lbapiby.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 938,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞百万资源",
-        "api": "https://api.bwzyz.com/api.php/provide/vod",
-        "disabled": false,
-        "success": false,
-        "latencyMs": 1574,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🔞souavZY",
-        "api": "https://api.souavzy.vip/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 376,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞155-资源",
-        "api": "https://155api.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 168,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞玉兔资源",
-        "api": "https://apiyutu.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 285,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞番号资源",
-        "api": "http://fhapi9.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 712,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞精品资源",
-        "api": "https://www.jingpinx.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 872,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞-老色逼-",
-        "api": "https://apilsbzy1.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 444,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞桃花资源",
-        "api": "https://thzy1.me/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 832,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞优优资源",
-        "api": "https://www.yyzywcj.com/api.php/provide/vod",
-        "disabled": false,
-        "success": false,
-        "latencyMs": 87,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🔞小鸡资源",
-        "api": "https://api.xiaojizy.live/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 450,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞黄色仓库",
-        "api": "https://hsckzy.xyz/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 212,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞-大奶子-",
-        "api": "https://apidanaizi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 439,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞jkun资源",
-        "api": "https://jkunzyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 169,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞乐播资源",
-        "api": "https://lbapi9.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 345,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞奶香资源",
-        "api": "https://Naixxzy.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 599,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞森林资源",
-        "api": "https://beiyong.slapibf.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 514,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🔞辣椒资源",
-        "api": "https://apilj.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 1323,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞鲨鱼资源",
-        "api": "https://shayuapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 1413,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞-幸资源-",
-        "api": "https://xzybb2.com/api.php/provide/vod",
-        "disabled": false,
-        "success": false,
-        "latencyMs": 10002,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🔞豆豆资源",
-        "api": "https://api.douapi.cc/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 327,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞滴滴资源",
-        "api": "https://api.ddapi.cc/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 317,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞黑料资源",
-        "api": "https://www.heiliaozyapi.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 1058,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞-色南国-",
-        "api": "https://api.sexnguon.com/api.php/provide/vod",
-        "disabled": false,
-        "success": false,
-        "latencyMs": 147,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🔞 CK-资源",
-        "api": "https://ckzy.me/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 156,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞细胞资源",
-        "api": "https://www.xxibaozyw.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 439,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞香蕉资源",
-        "api": "https://www.xiangjiaozyw.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 846,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞-美少女-",
-        "api": "https://www.msnii.com/api/json.php",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 793,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞-黄AVZY",
-        "api": "https://www.pgxdy.com/api/json.php",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 364,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞白嫖资源",
-        "api": "https://www.kxgav.com/api/json.php",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 426,
-        "searchStatus": "✅"
-      },
-      {
-        "name": "🔞杏吧资源",
-        "api": "https://pz.168188.dpdns.org/?url=https://xingba222.com/api.php/provide/vod",
-        "disabled": false,
-        "success": false,
-        "latencyMs": 16,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🔞大地资源",
-        "api": "https://dadiapi.com/feifei",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 583,
-        "searchStatus": "不匹配"
-      },
-      {
-        "name": "🔞色猫资源",
-        "api": "https://caiji.semaozy.net/inc/apijson_vod.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 292,
-        "searchStatus": "无结果"
-      },
-      {
-        "name": "🔞-奥斯卡-",
-        "api": "https://aosikazy.com/api.php/provide/vod",
-        "disabled": false,
-        "success": true,
-        "latencyMs": 377,
-        "searchStatus": "❌"
-      },
-      {
-        "name": "🔞丝袜资源",
-        "api": "https://siwazyw.tv/api.php/provide/vod",
-        "disabled": false,
-        "success": false,
-        "latencyMs": 371,
-        "searchStatus": "❌"
-      }
-    ]
-  },
   {
     "date": "2026-08-22",
     "keyword": "你好",
@@ -18986,6 +18356,636 @@
         "disabled": false,
         "success": false,
         "latencyMs": 55,
+        "searchStatus": "❌"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-20",
+    "keyword": "你好",
+    "results": [
+      {
+        "name": "🎬-爱奇艺-",
+        "api": "https://iqiyizyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 594,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬豆瓣资源",
+        "api": "https://caiji.dbzy5.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 1050,
+        "searchStatus": "无结果"
+      },
+      {
+        "name": "🎬天涯影视",
+        "api": "https://tyyszy.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 539,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🎬茅台资源",
+        "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 1493,
+        "searchStatus": "无结果"
+      },
+      {
+        "name": "🎬卧龙资源",
+        "api": "https://wolongzyw.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 1437,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🎬iKun资源",
+        "api": "https://ikunzyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 862,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬电影天堂",
+        "api": "http://caiji.dyttzyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 927,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬猫眼资源",
+        "api": "https://api.maoyanapi.top/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 1399,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬量子资源",
+        "api": "https://cj.lzcaiji.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 1006,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬360 资源",
+        "api": "https://360zy.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 1362,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬极速资源",
+        "api": "https://jszyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 374,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬魔都资源",
+        "api": "https://www.mdzyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 208,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬非凡资源",
+        "api": "https://api.ffzyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 740,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬暴风资源",
+        "api": "https://bfzyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 207,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬最大资源",
+        "api": "https://api.zuidapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 201,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬无尽资源",
+        "api": "https://api.wujinapi.me/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 48,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬新浪资源",
+        "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 250,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬旺旺资源",
+        "api": "https://api.wwzy.tv/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 474,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🎬速播资源",
+        "api": "https://subocaiji.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 334,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬金鹰点播",
+        "api": "https://jinyingzy.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 171,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬飘零资源",
+        "api": "https://p2100.net/api.php/provide/vod",
+        "disabled": false,
+        "success": false,
+        "latencyMs": 25,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🎬U酷影视",
+        "api": "https://api.ukuapi88.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 97,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬光速资源",
+        "api": "https://api.guangsuapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 55,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬红牛资源",
+        "api": "https://www.hongniuzy2.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 158,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬魔都动漫",
+        "api": "https://caiji.moduapi.cc/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 377,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬如意资源",
+        "api": "https://pz.168188.dpdns.org/?url=https://cj.rycjapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": false,
+        "latencyMs": 331,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🎬豪华资源",
+        "api": "https://pz.168188.dpdns.org/?url=https://hhzyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": false,
+        "latencyMs": 6,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🎬百度云zy",
+        "api": "https://pz.168188.dpdns.org/?url=https://api.apibdzy.com/api.php/provide/vod",
+        "disabled": false,
+        "success": false,
+        "latencyMs": 323,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🎬山海资源",
+        "api": "https://zy.sh0o.cn/api.php/provide/vod",
+        "disabled": false,
+        "success": false,
+        "latencyMs": 7502,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🎬金蝉影视",
+        "api": "https://zy.jinchancaiji.com/api.php/provide/vod",
+        "disabled": false,
+        "success": false,
+        "latencyMs": 294,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🎬量子影视",
+        "api": "https://cj.lziapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 67,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬最大点播",
+        "api": "https://zuidazy.me/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 125,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬无尽影视",
+        "api": "https://api.wujinapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 99,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬旺旺短剧",
+        "api": "https://wwzy.tv/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 437,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🎬优质资源",
+        "api": "https://api.yzzy-api.com/inc/apijson.php",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 560,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬虎牙资源",
+        "api": "https://www.huyaapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 140,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🎬鸭鸭资源",
+        "api": "https://cj.yayazy.net/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 179,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🎬索尼资源",
+        "api": "https://suoniapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 47,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🎬快车资源",
+        "api": "https://caiji.kuaichezy.org/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 354,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🎬闪电资源",
+        "api": "https://xsd.sdzyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 329,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🎬樱花资源",
+        "api": "https://m3u8.apiyhzy.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 507,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🔞麻豆视频",
+        "api": "https://91md.me/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 347,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞91-精品-",
+        "api": "https://91jpzyw.com/api.php/provide/vod",
+        "disabled": false,
+        "success": false,
+        "latencyMs": 5,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🔞--AIvin-",
+        "api": "http://lbapiby.com/api.php/provide/vod",
+        "disabled": false,
+        "success": false,
+        "latencyMs": 157,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🔞百万资源",
+        "api": "https://api.bwzyz.com/api.php/provide/vod",
+        "disabled": false,
+        "success": false,
+        "latencyMs": 555,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🔞souavZY",
+        "api": "https://api.souavzy.vip/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 173,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞155-资源",
+        "api": "https://155api.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 43,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞玉兔资源",
+        "api": "https://apiyutu.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 113,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞番号资源",
+        "api": "http://fhapi9.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 461,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞精品资源",
+        "api": "https://www.jingpinx.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 1584,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞-老色逼-",
+        "api": "https://apilsbzy1.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 922,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞桃花资源",
+        "api": "https://thzy1.me/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 1620,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞优优资源",
+        "api": "https://www.yyzywcj.com/api.php/provide/vod",
+        "disabled": false,
+        "success": false,
+        "latencyMs": 317,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🔞小鸡资源",
+        "api": "https://api.xiaojizy.live/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 325,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞黄色仓库",
+        "api": "https://hsckzy.xyz/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 330,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞-大奶子-",
+        "api": "https://apidanaizi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 349,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞jkun资源",
+        "api": "https://jkunzyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 42,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞乐播资源",
+        "api": "https://lbapi9.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 591,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞奶香资源",
+        "api": "https://Naixxzy.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 844,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞森林资源",
+        "api": "https://beiyong.slapibf.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 413,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞辣椒资源",
+        "api": "https://apilj.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 677,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞鲨鱼资源",
+        "api": "https://shayuapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 2538,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞-幸资源-",
+        "api": "https://xzybb2.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 617,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🔞豆豆资源",
+        "api": "https://api.douapi.cc/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 682,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞滴滴资源",
+        "api": "https://api.ddapi.cc/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 586,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞黑料资源",
+        "api": "https://www.heiliaozyapi.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 2024,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞-色南国-",
+        "api": "https://api.sexnguon.com/api.php/provide/vod",
+        "disabled": false,
+        "success": false,
+        "latencyMs": 817,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🔞 CK-资源",
+        "api": "https://ckzy.me/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 190,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞细胞资源",
+        "api": "https://www.xxibaozyw.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 150,
+        "searchStatus": "无结果"
+      },
+      {
+        "name": "🔞香蕉资源",
+        "api": "https://www.xiangjiaozyw.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 760,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞-美少女-",
+        "api": "https://www.msnii.com/api/json.php",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 720,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞-黄AVZY",
+        "api": "https://www.pgxdy.com/api/json.php",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 1089,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞白嫖资源",
+        "api": "https://www.kxgav.com/api/json.php",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 221,
+        "searchStatus": "✅"
+      },
+      {
+        "name": "🔞杏吧资源",
+        "api": "https://pz.168188.dpdns.org/?url=https://xingba222.com/api.php/provide/vod",
+        "disabled": false,
+        "success": false,
+        "latencyMs": 6,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🔞大地资源",
+        "api": "https://dadiapi.com/feifei",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 1132,
+        "searchStatus": "不匹配"
+      },
+      {
+        "name": "🔞色猫资源",
+        "api": "https://caiji.semaozy.net/inc/apijson_vod.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 784,
+        "searchStatus": "无结果"
+      },
+      {
+        "name": "🔞-奥斯卡-",
+        "api": "https://aosikazy.com/api.php/provide/vod",
+        "disabled": false,
+        "success": true,
+        "latencyMs": 554,
+        "searchStatus": "❌"
+      },
+      {
+        "name": "🔞丝袜资源",
+        "api": "https://siwazyw.tv/api.php/provide/vod",
+        "disabled": false,
+        "success": false,
+        "latencyMs": 51,
         "searchStatus": "❌"
       }
     ]
